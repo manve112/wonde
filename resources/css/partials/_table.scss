@@ -1,0 +1,27 @@
+table {
+    border: none;
+    background: $white;
+    width: 100%;
+
+    thead {
+        background: $white;
+        color: $black;
+        border-bottom: 1px solid $lightGray;
+
+        tr {
+            th {
+                text-align: left;
+                font-size: 16px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(2n - 1) {
+                background-color: $secondary;
+            }
+        }
+    }
+}
